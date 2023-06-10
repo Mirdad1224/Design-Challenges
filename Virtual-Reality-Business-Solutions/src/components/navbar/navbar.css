@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.32rem;
+  flex: 1;
+  font-size: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1.5;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar-links li:not(:last-child) {
+    display: none;
+  }
+  .navbar-links {
+    justify-content: flex-end;
+  }
+}
