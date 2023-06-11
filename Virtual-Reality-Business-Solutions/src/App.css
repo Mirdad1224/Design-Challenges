@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: DM Sans;
+  color: #F9FAFB;
+  font-size: 1.6rem;
+  background: rgba(17, 24, 39, 1);
+  background-image: url(./assets/images/Blur.png);
+  backdrop-filter: blur(33px);
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 13.5rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 0 10rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media screen and (max-width: 950px) {
+  .container {
+    padding: 0 7rem;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 3rem;
+  }
 }
